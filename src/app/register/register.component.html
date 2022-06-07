@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="formDiv">
+    <input
+      #name.value
+      style="width:200px;"
+      type="text"
+      placeholder="Name"
+      class="form-control"
+    />
+    <input
+      #surname.value
+      style="width:200px;margin-top:10px;"
+      type="text"
+      placeholder="Surname"
+      class="form-control"
+    />
+    <input
+      #age.value
+      style="width:200px;margin-top:10px;"
+      type="number"
+      placeholder="Age"
+      class="form-control"
+      *ngIf="age.value"
+    />
+    <input
+      #date.value
+      style="width:200px;margin-top:10px;"
+      type="date"
+      class="form-control"
+    />
+    <button
+      (click)="Register(name, surname, age, date)"
+      class="btn btn-primary mt-sm-3"
+    >
+      Register
+    </button>
+  </div>
+</div>
